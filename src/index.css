@@ -1,0 +1,39 @@
+:root {
+    --text-color: #565973;
+    --text-header-color: #131022;
+    --background-color: #FFFFFF;
+    --background-muted-color: #F3F6FF;
+}
+
+[data-theme="dark"] {
+    --text-color: #565973;
+    --text-header-color: #ffffff;
+    --background-color: #0B0F19;
+    --background-muted-color: #151822
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100dvh;
+
+    font-family: "Manrope", sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header, footer, section
+{
+    @media screen and (min-width: 768px ) {
+        padding: 0 calc(50vw - 361px);
+    }
+    
+    @media screen and (min-width: 1400px) {
+        padding: 0 calc(50vw - 657px);
+    }
+} 
+
+.muted {
+    background-color: var(--background-muted-color);
+}
