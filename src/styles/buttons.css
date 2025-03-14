@@ -1,0 +1,49 @@
+.btn {
+    display: flex;
+    align-items: center;
+    
+    font-weight: bold;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    
+    gap: 8px;
+    height: 44px;
+    padding: 11px 28px;
+
+    &.round {
+        border-radius: 6px;
+    }
+
+    &.small {
+        padding: 9px 20px;
+        height: 36px;
+        &.round {
+            border-radius: 4px;
+        }
+    }
+
+    &.large {
+        font-size: 16px;
+        height: 52px;
+        padding: 13px 32px;
+        &.round {
+            border-radius: 8px;
+        }
+    }
+
+    &.primary {
+        border-color: var(--primary-color);
+        background-color: var(--primary-color);
+        &:active {
+            color: var(--primary-color);
+        }
+    }
+
+    i {
+        font-size: 18px;
+    }
+
+    &:active{
+        background-color: transparent;
+    }
+}
