@@ -1,13 +1,16 @@
 import React, { Children, StrictMode } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { DarkModeProvider } from './contexts/DarkModeContext'
+import { TestimonialsProvider } from './contexts/TestimonialsContext'
 
 const Providers = ({children}) => {
   return (
     <StrictMode>
       <BrowserRouter>
         <DarkModeProvider>
-          {children}
+          <TestimonialsProvider>
+            {children}
+          </TestimonialsProvider>
         </DarkModeProvider>
       </BrowserRouter>
     </StrictMode>

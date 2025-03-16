@@ -109,3 +109,68 @@ header, footer, section
         border-radius: 8px;
     }
 }
+
+#testimonials-section {
+    background-color: var(--background-muted-color);
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    gap: 2rem;
+
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    .testimonial {
+        position: relative;
+        padding: 48px 24px 24px 24px;
+        border-radius: 8px;
+
+        box-shadow: 0px 4.4px 12px -1px #13102221;
+
+        height: 350;
+        background-color: white;
+
+        .testimonial-icon {
+            position: absolute;
+            left: 25px;
+            top: -20px;
+
+            border-radius: 8px;
+            height: 44px;
+            width: 44px;
+            background-color: var(--primary-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .star-rating {
+            display: flex;
+            gap: 2px;
+            color: var(--text-footer-color);
+            .bi-star-fill{
+                color: var(--warning-color);
+            }
+        }
+
+        .client-info {
+            display: grid;
+            column-gap: 1rem;
+            grid-template-columns: auto 1fr;
+            grid-template-areas: "image author" "image role";
+
+            .image {
+                grid-area: image;
+            }
+
+            .author {
+                grid-area: author;
+            }
+
+            .role {
+                grid-area: role;
+                line-height: 0;
+                color: var(--text-footer-color);
+            }
+        }
+    }
+}

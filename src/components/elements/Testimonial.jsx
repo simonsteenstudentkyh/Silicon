@@ -5,26 +5,23 @@ const Testimonial = ({item}) => {
   return (
     <div className="testimonial">
       <div className="testimonial-icon">
-        <i className="bi bi-quote"></i>
+        <img src="/images/icons/quote.svg" alt={"\""} />
       </div>
 
       <div className="star-rating">
         {
           [...Array(5)].map((_, i) =>
-          
             (<i key={i} className={ i < item.starRating ? "bi bi-star-fill" : "bi bi-star"} />)
           )
         }
       </div>
 
-      <p className="testimonial-text">
-        {item.comment}
-      </p>
+      <p className="large">{item.comment}</p>
 
       <div className="client-info">
         <img className="image" src={item.avatarUrl} alt=""/>
-        <div className="author">{item.author}</div>
-        <div className="role">{item.jobRole}</div>
+        <h6 className="author">{item.author}</h6>
+        <p className="small role">{item.jobRole}</p>
       </div>
     </div>
   )
