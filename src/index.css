@@ -112,6 +112,43 @@ header, footer, section
     }
 }
 
+#features-section {
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image title" "image features";
+
+    .image {
+        grid-area: image;
+    }
+    
+    .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4;
+
+        .feature {
+
+            display: grid;
+            grid-template-columns: 1fr auto;
+            column-gap: 1.5rem;
+            grid-template-areas: "icon title" "icon description";
+
+            .feature-icon {
+                grid-area: icon;
+                display: flex;
+                height: 60px;
+                width: 60px;
+                background-color: #6365f11c;
+                border-radius: 8px;
+
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
 #testimonials-section {
     background-color: var(--background-muted-color);
     display: grid;
