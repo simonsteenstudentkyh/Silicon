@@ -5,6 +5,7 @@ import Testimonials from '../components/sections/Testimonials'
 import Features from '../components/sections/Features'
 import Features2 from '../components/sections/Features2'
 import Faq from '../components/sections/Faq'
+import HowDoesItWork from '../components/sections/HowDoesItWork'
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Hero />
       <Brands />
       <Features />
+      <HowDoesItWork />
       <Features2 />
       <Testimonials />
       <Faq />
