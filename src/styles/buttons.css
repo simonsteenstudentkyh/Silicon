@@ -19,6 +19,7 @@
 }
 
 .btn {
+    cursor: pointer;
     font: bold 14px "Manrope", sans-serif;
     text-decoration: none;
     box-sizing: border-box;

@@ -13,7 +13,7 @@ const Brands = () => {
   return (
     <section id="brands-section">
       {
-        brands.map( (image) => (<img className="brand" src={image.url} alt={image.alt} />))
+        brands.map( (image, index) => (<img className="brand" src={image.url} alt={image.alt} key={index} />))
       }
     </section>
   )
