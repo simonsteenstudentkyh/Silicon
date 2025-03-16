@@ -38,11 +38,7 @@ header, footer, section
     }
 } 
 
-.muted {
-    background-color: var(--background-muted-color);
-}
-
-header {
+#header-section {
     display: grid;
     gap: 2rem;
     grid-template-columns: auto 1fr auto auto;
@@ -73,11 +69,31 @@ header {
     }
 }
 
-footer {
+#footer-section {
     height: 130px;
     color: var(--text-footer-color);
 
     font-size: 14px;
     line-height: 130px;
     text-align: center;
+}
+
+
+#brands-section {
+    display: flex;
+    justify-content: space-between;
+
+    .brand {
+        box-sizing: border-box;
+        border: 1px solid var(--input-border-color);
+        height: 100px;
+        width: 196px;
+        padding: 2rem;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+    }
 }

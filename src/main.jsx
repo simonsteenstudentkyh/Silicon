@@ -4,6 +4,7 @@ import Header from './components/elements/sections/Header'
 import Footer from './components/elements/sections/Footer'
 import { Route, Routes } from 'react-router-dom'
 import Providers from './Providers'
+import HomePage from './pages/HomePage'
 
 
 createRoot(document.body).render(
@@ -13,6 +14,8 @@ createRoot(document.body).render(
 
     <main>
       <Routes>
+        
+        <Route path="/" element={<HomePage/>} />
         
       </Routes>
     </main>

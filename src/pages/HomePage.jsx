@@ -1,9 +1,10 @@
 import React from 'react'
+import Brands from '../components/elements/sections/Brands'
 
 const HomePage = () => {
   return (
     <>
-      HomePage
+      <Brands />
     </>
   )
 }

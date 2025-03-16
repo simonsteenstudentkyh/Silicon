@@ -6,7 +6,7 @@ const Header = () => {
   const {darkMode, toggleDarkMode } = useContext(DarkModeContext);
 
   return (
-    <header>
+    <header id="header-section">
       <Link to="/" className="navigation-logo">
         <img src={ darkMode ? "/images/logotype_dark.svg" : "/images/logotype_light.svg" } alt="Silicon Inc." />
       </Link>
