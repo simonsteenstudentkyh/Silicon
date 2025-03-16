@@ -21,6 +21,8 @@ body {
 
 header, footer, section
 {
+    box-sizing: border-box;
+
     /* mobile */
     padding: 1rem 0;
     
