@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { DarkModeContext } from '../../../contexts/DarkModeContext';
+import { DarkModeContext } from '../../contexts/DarkModeContext';
 
 const Hero = () => {
   const { darkMode } = useContext(DarkModeContext);

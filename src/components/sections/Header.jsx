@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { DarkModeContext } from '../../../contexts/DarkModeContext';
+import { DarkModeContext } from '../../contexts/DarkModeContext';
 
 const Header = () => {
   const {darkMode, toggleDarkMode } = useContext(DarkModeContext);
