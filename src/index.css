@@ -159,7 +159,9 @@ header, footer, section
 
     .carousel {
         width: 100%;
-        margin: 2.5rem 0;
+        margin: 2.5
+        
+        rem 0;
         display: flex;
         justify-content: space-around;
         
@@ -354,6 +356,44 @@ header, footer, section
             border-radius: 8px;
             padding: 24px 24px 16px 24px;
             box-shadow: 0 4px 9px -1px #1310221e;
+        }
+    }
+}
+
+#subscribe-section {
+    .container {
+        background-color: var(--background-muted-color);
+        border-radius: 8px;
+        padding: 3rem 6rem;
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: auto 40% 1fr;
+
+        .subscribe-form {
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            input {
+                margin: 0;
+                border-radius: 8px 0 0 8px;
+                border: solid var(--button-border-color);
+                border-width: 2px 0px 2px 2px;
+                padding: 1rem 2rem;
+                font-size: 1em;
+                width: 100%;
+            }
+        
+            .btn {
+                border-width: 2px;
+                border-radius: 0 8px 8px 0;
+            }
+
+            i {
+                font-size: 20px;
+                position: absolute;
+                left: 0.6rem;
+            }
         }
     }
 }
