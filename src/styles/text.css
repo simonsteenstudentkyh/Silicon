@@ -1,0 +1,114 @@
+:root {
+    --text-color: #565973;
+    --text-header-color: #131022;
+    --text-footer-color: #9397AD;
+    --text-link-color: #33354D;
+    --text-link-hover-color: #6366F1;
+}
+
+[data-theme="dark"] {
+    --text-color: #FFFFFF;
+    --text-header-color: #FFFFFF;
+    --text-footer-color: #8F9095;
+    --text-link-color: #FFFFFF;
+}
+
+body {
+    font: 16px "Manrope", sans-serif;
+    color: var(--text-color);
+}
+
+p, a, li  {
+    line-height: 160%;
+
+    &.extra-small {
+        font-size: 12px;
+    }
+
+    &.small {
+        font-size: 14px;
+    }
+
+    &.medium {
+        font-size: 16px;
+    }
+
+    &.large {
+        font-size: 18px;
+    }
+
+    &.extra-large {
+        font-size: 20px;
+    }
+
+    &.lead {
+        font-size: 24px;
+    }
+
+    &.navigation {
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--text-link-color);
+
+        &:hover {
+            color: var(--text-link-hover-color);
+            text-decoration: underline;
+        }
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6, d1, d2, d3, d4, d5, d6 {
+    color: var(--text-header-color);
+    font-weight: bolder;
+    line-height: 130%;
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+d1 {
+    font-size: 80px;
+}
+
+d2 {
+    font-size: 72px;
+}
+
+d3 {
+    font-size: 56px;
+}
+
+d4 {
+    font-size: 56px;
+}
+
+d5 {
+    font-size: 48px;
+}
+
+d6 {
+    font-size: 42px;
+}
