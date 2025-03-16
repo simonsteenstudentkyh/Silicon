@@ -18,7 +18,7 @@ body {
     color: var(--text-color);
 }
 
-p, a  {
+p, a, li  {
     line-height: 160%;
 
     &.extra-small {

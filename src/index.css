@@ -149,6 +149,65 @@ header, footer, section
     }
 }
 
+#features2-section {
+    display: grid;
+    align-items: center;
+    grid-template-areas: "transfer-title transfer-image" "contacts-image contacts-title";
+
+    .transfer-image {
+        grid-area: transfer-image;
+    }
+
+    .transfer-title {
+        grid-area: transfer-title;
+
+        ul {
+            padding: 1rem 0;
+
+            li {     
+                display: flex;
+                align-items: center;
+                padding: 1rem 0;
+                
+                &::before {
+                    margin-left: 0;
+                    margin-right: 0.5rem;
+                    content: url("/images/icons/check-circle.svg");
+                    line-height: 10px;
+                }
+            }
+        }
+    }
+
+    .contacts-image {
+        grid-area: contacts-image;
+    }
+
+    .contacts-title {
+        grid-area: contacts-title;
+
+        .features {
+            margin: 2rem 0;
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+
+            .feature {
+                .feature-icon {
+                    display: flex;
+                    height: 60px;
+                    width: 60px;
+                    background-color: #6365f11c;
+                    border-radius: 8px;
+    
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
 #testimonials-section {
     background-color: var(--background-muted-color);
     display: grid;
