@@ -7,9 +7,9 @@
 }
 
 [data-theme="dark"] {
-    --text-color: #565973;
+    --text-color: #FFFFFF;
     --text-header-color: #FFFFFF;
-    --text-footer-color: #FFFFFF;
+    --text-footer-color: #8F9095;
     --text-link-color: #FFFFFF;
 }
 
