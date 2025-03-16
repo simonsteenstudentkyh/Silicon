@@ -43,28 +43,20 @@ header, footer, section
     grid-template-columns: auto 1fr auto auto;
     align-items: center;
 
-    font-size: 1.2em;
-    font-weight: 600;    
+    .navigation-logo {
+        line-height: 100%;
+    }
 
     .main-navigation {
         display: flex;
         gap: 1.5rem;
-    
-        .navigation-link {
-            color: var(--text-color);
-            text-decoration: none;
-
-            &:hover {
-                color: var(--text-link-color);
-                text-decoration: underline;
-            }
-        }
     }
 
     .dark-mode {
         display: flex;
-        gap: 16px;
         align-items: center;
+        gap: 16px;
+        font-weight: 600;
     }
 }
 

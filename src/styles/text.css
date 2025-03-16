@@ -2,13 +2,15 @@
     --text-color: #565973;
     --text-header-color: #131022;
     --text-footer-color: #9397AD;
-    --text-link-color: #6366F1;
+    --text-link-color: #33354D;
+    --text-link-hover-color: #6366F1;
 }
 
 [data-theme="dark"] {
     --text-color: #565973;
-    --text-header-color: #ffffff;
+    --text-header-color: #FFFFFF;
     --text-footer-color: #FFFFFF;
+    --text-link-color: #FFFFFF;
 }
 
 body {
@@ -19,28 +21,39 @@ body {
 p, a  {
     line-height: 160%;
 
-    .extra-small {
+    &.extra-small {
         font-size: 12px;
     }
 
-    .small {
+    &.small {
         font-size: 14px;
     }
 
-    .medium {
+    &.medium {
         font-size: 16px;
     }
 
-    .large {
+    &.large {
         font-size: 18px;
     }
 
-    .extra-large {
+    &.extra-large {
         font-size: 20px;
     }
 
-    .lead {
+    &.lead {
         font-size: 24px;
+    }
+
+    &.navigation {
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--text-link-color);
+
+        &:hover {
+            color: var(--text-link-hover-color);
+            text-decoration: underline;
+        }
     }
 }
 

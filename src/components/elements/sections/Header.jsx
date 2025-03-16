@@ -12,8 +12,8 @@ const Header = () => {
       </Link>
 
       <nav className="main-navigation">
-        <NavLink to="/features" className="navigation-link">Features</NavLink>
-        <NavLink to="/contacts" className="navigation-link">Contacts</NavLink>
+        <NavLink to="/features" className="navigation">Features</NavLink>
+        <NavLink to="/contacts" className="navigation">Contacts</NavLink>
       </nav>
 
       <div className="dark-mode">
