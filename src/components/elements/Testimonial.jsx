@@ -16,7 +16,7 @@ const Testimonial = ({item}) => {
         }
       </div>
 
-      <p className="large">{item.comment}</p>
+      <p className="large muted">{item.comment}</p>
 
       <div className="client-info">
         <img className="image" src={item.avatarUrl} alt=""/>

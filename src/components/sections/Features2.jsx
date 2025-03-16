@@ -6,9 +6,9 @@ const Features2 = () => {
       <div className="transfer-title">
         <h2>Make your money transfer simple and clear</h2>
         <ul className="transfer-list">
-          <li className="transfer-item">Banking transactions are free for you</li>
-          <li>No monthly cash commission</li>
-          <li>Manage payments and transactions online</li>
+          <li className="muted">Banking transactions are free for you</li>
+          <li className="muted">No monthly cash commission</li>
+          <li className="muted">Manage payments and transactions online</li>
         </ul>  
         <button className="btn round primary">
           Learn more
@@ -27,14 +27,14 @@ const Features2 = () => {
             <div className="feature-icon">
               <img src="/images/icons/credit-card.svg" alt="Credit Card" />
             </div>
-            <p>Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
+            <p className="muted">Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
           </div>
 
           <div className="feature">
             <div className="feature-icon" >
               <img src="/images/icons/wallet.svg" alt="Wallet" />
             </div>
-            <p>A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>
+            <p className="muted">A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>
           </div>
 
         </div>

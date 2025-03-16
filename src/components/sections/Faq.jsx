@@ -40,7 +40,7 @@ const Faq = () => {
         faqs.map( (faq) => (
           <div className="accordion-item" key={faq.id}>
             <h6>{faq.title}</h6>
-            <p>{faq.content}</p>
+            <p className="muted">{faq.content}</p>
           </div>
         ))
       }
