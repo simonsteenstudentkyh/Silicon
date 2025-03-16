@@ -1,18 +1,31 @@
 :root {
     --input-border-color: #B4B7C9;
-    --input-active-color:
+    
+    --primary-color: #6366F1;
+    --secondary-color: #EFF2FC;
+    --success-color: #22C55E;
+    --error-color: #EF4444;
+    --warning-color: #FFBA08;
+    --info-color: #4C82F7;
+    --black-color: #0B0F19;
 }
 
 [data-theme="dark"] {
     --input-border-color: #85878C;
+
+    --secondary-color: #171B25;
+    --black-color: #EFF2FC;
 }
 
-
 .btn {
-    display: flex;
-    align-items: center;
+    font: bold 14px "Manrope", sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
     
-    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
     
@@ -46,6 +59,46 @@
         background-color: var(--primary-color);
         &:active {
             color: var(--primary-color);
+        }
+    }
+
+    &.success {
+        border-color: var(--success-color);
+        background-color: var(--success-color);
+        &:active {
+            color: var(--success-color);
+        }
+    }
+
+    &.error {
+        border-color: var(--error-color);
+        background-color: var(--error-color);
+        &:active {
+            color: var(--error-color);
+        }
+    }
+
+    &.warning {
+        border-color: var(--warning-color);
+        background-color: var(--warning-color);
+        &:active {
+            color: var(--warning-color);
+        }
+    }
+
+    &.info {
+        border-color: var(--info-color);
+        background-color: var(--info-color);
+        &:active {
+            color: var(--info-color);
+        }
+    }
+
+    &.black {
+        border-color: var(--black-color);
+        background-color: var(--black-color);
+        &:active {
+            color: var(--black-color);
         }
     }
 

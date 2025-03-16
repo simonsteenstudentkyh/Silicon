@@ -16,15 +16,15 @@ const Header = () => {
         <NavLink to="/contacts" className="navigation-link">Contacts</NavLink>
       </nav>
 
-      <div id="dark-mode">
+      <div className="dark-mode">
         Dark Mode
         <input className="switch" type="checkbox" checked={darkMode} onChange={toggleDarkMode} />
       </div>
 
-      <button className="btn primary small round">
+      <Link to="/sign-in" className="btn primary small round">
         <i className="bi bi-person"/>
         Sign in / up
-      </button>
+      </Link>
     </header>
   )
 }
