@@ -1,0 +1,12 @@
+:root {
+    --text-color: #565973;
+    --text-header-color: #131022;
+    --text-footer-color: #9397AD;
+    --text-link-color: #6366F1;
+}
+
+[data-theme="dark"] {
+    --text-color: #565973;
+    --text-header-color: #ffffff;
+    --text-footer-color: #FFFFFF;
+}

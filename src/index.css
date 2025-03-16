@@ -1,10 +1,7 @@
 @import url("styles/buttons.css");
+@import url("styles/text.css");
 
 :root {
-    --text-color: #565973;
-    --text-header-color: #131022;
-    --text-footer-color: #9397AD;
-
     --background-color: #FFFFFF;
     --background-muted-color: #F3F6FF;
     
@@ -17,9 +14,6 @@
 }
 
 [data-theme="dark"] {
-    --text-color: #565973;
-    --text-header-color: #ffffff;
-    --text-footer-color: #FFFFFF;
     --background-color: #0B0F19;
     --background-muted-color: #151822
 }
@@ -37,17 +31,53 @@ body {
 
 header, footer, section
 {
+    /* mobile */
+    padding: 1rem 0;
+    
+    /* tablet */
     @media screen and (min-width: 768px ) {
-        padding: 0 calc(50vw - 361px);
+        padding: 1rem calc(50vw - 361px);
     }
     
+    /* desktop */
     @media screen and (min-width: 1400px) {
-        padding: 0 calc(50vw - 657px);
+        padding: 1rem calc(50vw - 657px);
     }
 } 
 
 .muted {
     background-color: var(--background-muted-color);
+}
+
+header {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+
+    font-size: 1.2em;
+    font-weight: 600;    
+
+    .main-navigation {
+        display: flex;
+        gap: 1.5rem;
+    
+        .navigation-link {
+            color: var(--text-color);
+            text-decoration: none;
+
+            &:hover {
+                color: var(--text-link-color);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    #dark-mode {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
 }
 
 footer {
