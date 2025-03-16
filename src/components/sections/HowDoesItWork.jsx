@@ -12,7 +12,7 @@ const HowDoesItWork = () => {
         </div>
 
         <h4>Latest transaction history</h4>
-        <p className="description">Enim, et amet praesent pharetra. Mi non ante hendrerit amet sed. Arcu sociis tristique quisque hac in consectetur condimentum. </p>
+        <p className="description muted">Enim, et amet praesent pharetra. Mi non ante hendrerit amet sed. Arcu sociis tristique quisque hac in consectetur condimentum. </p>
     </section>
   )
 }

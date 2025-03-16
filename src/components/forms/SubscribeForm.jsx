@@ -32,7 +32,7 @@ const SubscribeForm = () => {
         <>
             <form className="subscribe-form" onSubmit={handleSubmit}>
                 <i className="bi bi-envelope"></i>
-                <input type="email" placeholder="Your email" value={formData.email} onChange={handleChange} />
+                <input type="email" className="input-field" placeholder="Your email" value={formData.email} onChange={handleChange} />
                 <button type="submit" className="btn primary large">Subscribe</button>
             </form>
 

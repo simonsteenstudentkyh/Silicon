@@ -55,6 +55,10 @@ p, a, li  {
             text-decoration: underline;
         }
     }
+
+    &.muted {
+        color: var(--text-footer-color);
+    }
 }
 
 

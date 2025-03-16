@@ -1,6 +1,7 @@
 :root {
     --button-text-color: white;
     --button-border-color: #B4B7C9;
+    --button-border-muted-color: #E2E5F1;
     
     --primary-color: #6366F1;
     --secondary-color: #EFF2FC;
@@ -13,6 +14,7 @@
 
 [data-theme="dark"] {
     --button-border-color: #85878C;
+    --button-border-muted-color: #2F333B;
 
     --secondary-color: #171B25;
     --black-color: #EFF2FC;

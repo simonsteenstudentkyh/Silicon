@@ -9,7 +9,7 @@ const Hero = () => {
     <section id="hero-section">
       <div className="title">
         <d4>Manage All Your Money in One App</d4>
-        <p className="large">We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
+        <p className="large muted">We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
      
         <div className="market-btns">
           <Link to="/app-store" className="btn large round black">
