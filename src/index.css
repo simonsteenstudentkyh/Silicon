@@ -75,6 +75,27 @@ header, footer, section
     text-align: center;
 }
 
+#hero-section {
+    background: radial-gradient(circle, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
+    padding-top: 9rem;
+    padding-bottom: 0;
+    
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    
+    .title {
+        margin-top: 4rem;
+
+        .market-btns {
+            margin-top: 48px;
+            gap: 2rem;
+            display: grid;
+            width: 80%;
+            grid-template-columns: auto auto;
+        }
+    }
+}
 
 #brands-section {
     display: flex;
