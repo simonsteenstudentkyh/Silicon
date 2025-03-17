@@ -172,3 +172,38 @@ input {
         }
     }
 }
+
+.accordion {
+    border-radius: 8px;
+    padding: 16px 24px;
+    background-color: #ffffff10;
+    box-shadow: 0 4px 9px -1px #1310221e;
+
+    summary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    summary::after {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-family: bootstrap-icons;
+        font-size: 14px;
+        font-weight: bolder;
+
+        background-color: #9695951a;
+        content: '\F282';
+    }
+
+    &[open] summary::after {
+        background-color: var(--primary-color);
+        color: white;
+        content: '\F286';
+    }
+}

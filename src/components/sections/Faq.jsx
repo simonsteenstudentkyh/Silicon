@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { FaqContext } from '../../contexts/FaqContext';
+import Accordion from '../elements/Accordion';
 // import { Accordion } from '../elements/Accordion'
 
 const Faq = () => {
@@ -35,15 +36,10 @@ const Faq = () => {
         </div>
       </div>
 
-      <div className="accordion">
-      {
-        faqs.map( (faq) => (
-          <div className="accordion-item" key={faq.id}>
-            <h6>{faq.title}</h6>
-            <p className="muted">{faq.content}</p>
-          </div>
-        ))
-      }
+      <div className="accordion-group">
+        {
+          faqs.map( (faq, index) => (<Accordion group="faq" title={faq.title} content={faq.content} key={index} />))
+        }
       </div>
     </section>
   )
