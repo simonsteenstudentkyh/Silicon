@@ -25,6 +25,8 @@ body {
 
 header, footer, section {
     position: relative;
+    box-sizing: border-box;
+    padding: 1rem;
 
     &::before {
         content: "";
@@ -56,16 +58,16 @@ header, footer, section {
 
 #header-section {
     display: grid;
-    gap: 2rem;
-    grid-template-columns: auto 1fr auto auto;
+    grid-template-columns: 1fr auto auto;
     align-items: center;
+    gap: 2rem;
 
     .navigation-logo {
         line-height: 100%;
     }
 
     .main-navigation {
-        display: flex;
+        display: none;
         gap: 1.5rem;
     }
 
@@ -74,6 +76,47 @@ header, footer, section {
         align-items: center;
         gap: 16px;
         font-weight: 600;
+
+        .label {
+            line-height: 80%;
+            display: none;
+        }
+    }
+
+    .sign-in {
+        &.icon {
+            color: var(--text-link-color);
+            font-size: 44px;
+            line-height: 100%;
+        }
+        &.btn {
+            display: none;
+        }
+    }
+
+    /* tablet */
+    @media (width >= 768px ) {
+        .dark-mode .label {
+            display: block;
+        }
+    }
+
+    /* desktop */
+    @media(width  >= 1400px) {
+        grid-template-columns: auto 1fr auto auto;
+
+        .main-navigation {
+            display: flex;
+        }
+        
+        .sign-in {
+            &.icon {
+                display: none;
+            }
+            &.btn {
+                display: flex;
+            }
+        }
     }
 }
 

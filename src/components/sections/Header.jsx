@@ -17,13 +17,17 @@ const Header = () => {
       </nav>
 
       <div className="dark-mode">
-        Dark Mode
+        <p className="label">Dark Mode</p>
         <input className="switch" type="checkbox" checked={darkMode} onChange={toggleDarkMode} />
       </div>
 
-      <Link to="/sign-in" className="btn primary small round">
+      <Link to="/sign-in" className="sign-in btn primary small round">
         <i className="bi bi-person"/>
         Sign in / up
+      </Link>
+
+      <Link to="/sign-in" className="sign-in icon">
+        <i className="bi bi-list"/>
       </Link>
     </header>
   )
