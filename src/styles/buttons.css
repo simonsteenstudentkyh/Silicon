@@ -3,6 +3,7 @@
     --button-border-color: #B4B7C9;
     --button-border-muted-color: #E2E5F1;
     
+    --accordion-color: #9695951a;
     --primary-color: #6366F1;
     --secondary-color: #EFF2FC;
     --success-color: #22C55E;
@@ -66,6 +67,15 @@
         }
     }
 
+    &.secondary {
+        color: var(--black-color);
+        border-color: var(--secondary-color);
+        background-color: var(--secondary-color);
+        &:active {
+            color: var(--secondary-color);
+        }
+    }
+
     &.success {
         border-color: var(--success-color);
         background-color: var(--success-color);
@@ -112,6 +122,10 @@
 
     &:active{
         background-color: transparent;
+    }
+
+    &.pill {
+        border-radius: 50vh;
     }
 }
 
@@ -197,7 +211,7 @@ input {
         font-size: 14px;
         font-weight: bolder;
 
-        background-color: #9695951a;
+        background-color: var(--accordion-color);
         content: '\F282';
     }
 

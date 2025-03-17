@@ -7,21 +7,24 @@ const Hero = () => {
 
   return (
     <section id="hero-section">
-      <div className="title">
-        <d4>Manage All Your Money in One App</d4>
-        <p className="large muted">We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
-     
-        <div className="market-btns">
-          <Link to="/app-store" className="btn large round black">
-            <img src={ darkMode ? "/images/markets/appstore_dark.svg" : "/images/markets/appstore_light.svg" } alt="App Store" />
-          </Link>
-          <Link to="/google-play" className="btn large round black">
-            <img src={ darkMode ? "/images/markets/googleplay_dark.svg" : "/images/markets/googleplay_light.svg" } alt="Google Play" />
-          </Link>
-        </div>
+
+      <h1 className="title">Manage All Your Money in One App</h1>
+      <p className="description large muted">We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
+
+      <Link to="/app-store" className="appstore btn large round black">
+        <img src={ darkMode ? "/images/markets/appstore_dark.svg" : "/images/markets/appstore_light.svg" } alt="App Store" />
+      </Link>
+      <Link to="/google-play" className="googleplay btn large round black">
+        <img src={ darkMode ? "/images/markets/googleplay_dark.svg" : "/images/markets/googleplay_light.svg" } alt="Google Play" />
+      </Link>
+
+      <div className="learn-more">
+        <i className="bi bi-chevron-down btn secondary pill" ></i>
+        <p>Discover more</p>
       </div>
 
-      <img src="/images/hero-image.svg" alt="Hero image" />
+      <img className="image" src="/images/hero-image.svg" alt="Hero image" />
+      
     </section>
   )
 }
